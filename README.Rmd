@@ -1,0 +1,4 @@
+urltemplate
+===========
+
+[![Build Status](https://travis-ci.org/ropenscilabs/urltemplate.svg?branch=master)](https://travis-ci.org/ropenscilabs/urltemplate)

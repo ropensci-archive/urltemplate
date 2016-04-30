@@ -1,0 +1,15 @@
+Package: urltemplate
+Title: URL Templating Following RFC6570
+Description: URL templating following RFC6570.
+Version: 0.0.1.9000
+Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"), email =
+    "myrmecocystus@gmail.com")
+License: MIT + file LICENSE
+URL: https://github.com/ropenscilabs/urltemplate
+BugReports: https://github.com/ropenscilabs/urltemplate/issues
+LazyData: true
+Imports:
+    magrittr (>= 1.5),
+    lazyeval (>= 0.1.10),
+    urltools
+RoxygenNote: 5.0.1
