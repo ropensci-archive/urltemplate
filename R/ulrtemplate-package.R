@@ -1,6 +1,6 @@
 #' URL Templating Following RFC6570
 #'
-#' @import httr magrittr lazyeval urltools
+#' @import magrittr lazyeval urltools
 #' @name urltemplate-package
 #' @aliases urltemplate
 #' @docType package

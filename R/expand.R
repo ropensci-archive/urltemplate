@@ -7,9 +7,9 @@ RESERVED <- ":/?#[]@!$&'()*+,;="
 OPERATOR <- "+#./;?&|!@"
 TEMPLATE <- "\\{([^\\}]+)\\}"
 
-x <- template <- "http://www.{domain}/"
-x <- template2 <- 'http:www{.domain*}{/top,next}{?q:20}'
-variables <- list(domain = "foo.com")
+# x <- template <- "http://www.{domain}/"
+# x <- template2 <- 'http:www{.domain*}{/top,next}{?q:20}'
+# variables <- list(domain = "foo.com")
 
 expand <- function(template, variables) {
   sub(TEMPLATE, .ex_pand(variables), template)

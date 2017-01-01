@@ -12,6 +12,4 @@ parseurl <- function(x) {
   tmp
 }
 
-last <- function(x) {
-  x[length(x)]
-}
+last <- function(x) x[length(x)]

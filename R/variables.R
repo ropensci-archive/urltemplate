@@ -1,8 +1,9 @@
-#' Get variables that can be expanded
+#' Returns the set of keywords in a uri template
 #'
 #' @export
-#' @param x A template
-#' @examples \dontrun{
+#' @param x (character) A template
+#' @return a character vector of keywords
+#' @examples
 #' variables("http:www{.domain*}{/top,next}{?q:20}")
 #' variables("http://www.{domain}/")
 #' variables("find{?year*}")
@@ -10,7 +11,6 @@
 #' variables("{x,hello,y}")
 #' variables("{#path:6}/here")
 #' variables("up{+path}{var}/here")
-#' }
 variables <- function(x) {
   vars <- list()
   res <- strextract(x, TEMPLATE)
