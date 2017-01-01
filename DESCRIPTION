@@ -2,7 +2,7 @@ Package: urltemplate
 Title: URL Templating Following RFC6570
 Description: URL templating following RFC6570 
     (<https://tools.ietf.org/html/rfc6570#page-14>).
-Version: 0.0.2.9100
+Version: 0.0.2.9130
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"), email =
     "myrmecocystus@gmail.com")
 License: MIT + file LICENSE

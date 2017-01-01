@@ -5,7 +5,3 @@ expand <- function(x) {
 xxxx <- function(x) {
   "x"
 }
-
-variables <- function(x) {
-  "x"
-}
