@@ -13,3 +13,5 @@ parseurl <- function(x) {
 }
 
 last <- function(x) x[length(x)]
+
+strextract <- function(str, pattern) regmatches(str, gregexpr(pattern, str))[[1]]
