@@ -5,5 +5,5 @@
 #' @aliases urltemplate
 #' @docType package
 #' @keywords package
-#' @author Scott Chamberlain
+#' @author Scott Chamberlain \email{myrmecocystus@@gmail.com}
 NULL

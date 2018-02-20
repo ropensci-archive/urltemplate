@@ -2,14 +2,13 @@
 % Please edit documentation in R/ulrtemplate-package.R
 \docType{package}
 \name{urltemplate-package}
-\alias{urltemplate}
 \alias{urltemplate-package}
+\alias{urltemplate}
 \title{URL Templating Following RFC6570}
 \description{
 URL Templating Following RFC6570
 }
 \author{
-Scott Chamberlain
+Scott Chamberlain \email{myrmecocystus@gmail.com}
 }
 \keyword{package}
-
