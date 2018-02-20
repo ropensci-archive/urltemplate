@@ -1,27 +1,29 @@
-# RESERVED = ":/?#[]@!$&'()*+,;="
-# OPERATOR = "+#./;?&|!@"
-# MODIFIER = ":^"
-# TEMPLATE = re.compile("{([^\}]+)}")
+#' Expand - expand a uri template with data
+#'
+#' @export
+#' @examples
+#' expand(template = 'http://www.{domain}/', variables = '{"domain": "foo.com"}')
+expand <- function(template, variables) {
+  sub(TEMPLATE, .ex_pand(variables), template)
+}
 
 RESERVED <- ":/?#[]@!$&'()*+,;="
 OPERATOR <- "+#./;?&|!@"
+MODIFIER <- ":^"
 TEMPLATE <- "\\{([^\\}]+)\\}"
 
 # x <- template <- "http://www.{domain}/"
 # x <- template2 <- 'http:www{.domain*}{/top,next}{?q:20}'
 # variables <- list(domain = "foo.com")
 
-expand <- function(template, variables) {
-  sub(TEMPLATE, .ex_pand(variables), template)
-}
-
 .ex_pand <- function(variables, OPERATOR, RESERVED) {
   operator <- ""
-  if (expression[1] %in% OPERATOR) {
-    operator <- expression[1]
-    varlist <- expression[2:length(expression)]
+  ex_pression <- ""
+  if (substring(ex_pression, 1, 1) %in% OPERATOR) {
+    operator <- ex_pression[1]
+    varlist <- ex_pression[2:length(ex_pression)]
   } else {
-    varlist <- expression
+    varlist <- ex_pression
   }
 
   safe <- ""
@@ -60,8 +62,6 @@ expand <- function(template, variables) {
 
   }
 }
-
-strextract <- function(str, pattern) regmatches(str, gregexpr(pattern, str))[[1]]
 
 # def expand(template, variables):
 #     """

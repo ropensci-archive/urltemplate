@@ -24,4 +24,3 @@ variables("{x,hello,y}")
 variables("{#path:6}/here")
 variables("up{+path}{var}/here")
 }
-
