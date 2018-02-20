@@ -39,6 +39,11 @@ variables("find{?year*}")
 * test suite
 * vignette
 
+## Similar art
+
+* Ruby's [addressable](https://github.com/sporkmonger/addressable)
+* Python's [uritemplate-py](https://github.com/uri-templates/uritemplate-py)
+
 ## Meta
 
 * Please [report any issues or bugs](https://github.com/ropenscilabs/urltemplate/issues).
