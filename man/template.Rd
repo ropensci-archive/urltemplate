@@ -4,7 +4,7 @@
 \alias{template}
 \title{Returns the set of keywords in a uri template}
 \usage{
-template(x = "")
+template(uri = "")
 }
 \arguments{
 \item{uri}{(character) any URI}
@@ -13,6 +13,7 @@ template(x = "")
 Returns the set of keywords in a uri template
 }
 \examples{
+\dontrun{
 # no URI given
 x <- template()
 x
@@ -22,14 +23,15 @@ x$ip_based_schemes
 # give a URI
 x <- template("http:.//example.com/foo/bar")
 x
-x$uri
+x$pattern
 ## parse it
-x$parse()
-x$uri_parsed
+# x$parse()
+# x$uri_parsed
 
 # join
-base <- "http://example.com"
-uri <- template("relative/path")
-uri$parse()
-uri$join(base, uri)
+# base <- "http://example.com"
+# uri <- template("relative/path")
+# uri$parse()
+# uri$join(base, uri)
+}
 }

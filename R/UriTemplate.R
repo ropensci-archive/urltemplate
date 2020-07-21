@@ -23,7 +23,7 @@ urltemplate_ip_based_schemes <- c("http", "https", "ftp", "tftp",
 #'
 #' @export
 #' @param uri (character) any URI
-#' @examples
+#' @examples \dontrun{
 #' # no URI given
 #' x <- template()
 #' x
@@ -33,18 +33,19 @@ urltemplate_ip_based_schemes <- c("http", "https", "ftp", "tftp",
 #' # give a URI
 #' x <- template("http:.//example.com/foo/bar")
 #' x
-#' x$uri
+#' x$pattern
 #' ## parse it
-#' x$parse()
-#' x$uri_parsed
+#' # x$parse()
+#' # x$uri_parsed
 #' 
 #' # join
-#' base <- "http://example.com"
-#' uri <- template("relative/path")
-#' uri$parse()
-#' uri$join(base, uri)
-template <- function(x = "") {
-  UriTemplate$new(uri = x)
+#' # base <- "http://example.com"
+#' # uri <- template("relative/path")
+#' # uri$parse()
+#' # uri$join(base, uri)
+#' }
+template <- function(uri = "") {
+  UriTemplate$new(uri)
 }
 
 UriTemplate <- R6::R6Class(
@@ -60,7 +61,7 @@ UriTemplate <- R6::R6Class(
 
     print = function() {
       # cat("<uri> ", sep = "\n")
-      cat(paste0("<uri>: ", self$uri %||% "none"), sep = "\n")
+      cat(paste0("<uri>: ", self$pattern %||% "none"), sep = "\n")
       invisible(self)
     }
 

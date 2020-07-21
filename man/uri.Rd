@@ -4,7 +4,7 @@
 \alias{uri}
 \title{Returns the set of keywords in a uri template}
 \usage{
-uri(x = "")
+uri(uri = "")
 }
 \arguments{
 \item{uri}{(character) any URI}

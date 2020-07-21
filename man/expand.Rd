@@ -6,9 +6,11 @@
 \usage{
 expand(template, variables)
 }
+\arguments{
+\item{template}{x}
+
+\item{variables}{x}
+}
 \description{
 Expand - expand a uri template with data
-}
-\examples{
-expand(template = 'http://www.{domain}/', variables = '{"domain": "foo.com"}')
 }

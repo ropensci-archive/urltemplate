@@ -11,7 +11,7 @@ URL templating following RFC6570 (<https://tools.ietf.org/html/rfc6570#page-14>)
 
 
 ```r
-devtools::install_github("ropenscilabs/urltemplate")
+remotes::install_github("ropenscilabs/urltemplate")
 ```
 
 
@@ -49,7 +49,6 @@ variables("find{?year*}")
 * Please [report any issues or bugs](https://github.com/ropenscilabs/urltemplate/issues).
 * License: MIT
 * Get citation information for `urltemplate` in R doing `citation(package = 'urltemplate')`
-* Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). 
-By participating in this project you agree to abide by its terms.
+* Please note that this package is released with a [Contributor Code of Conduct](https://ropensci.org/code-of-conduct/). By contributing to this project, you agree to abide by its terms.
 
 [![ropensci_footer](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)

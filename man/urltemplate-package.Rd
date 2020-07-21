@@ -4,7 +4,7 @@
 \name{urltemplate-package}
 \alias{urltemplate-package}
 \alias{urltemplate}
-\title{URL Templating Following RFC6570}
+\title{urltemplate}
 \description{
 URL Templating Following RFC6570
 }

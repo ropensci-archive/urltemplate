@@ -43,8 +43,8 @@ urltemplate_ip_based_schemes <- c("http", "https", "ftp", "tftp",
 #' uri <- uri("relative/path")
 #' uri$parse()
 #' uri$join(base, uri)
-uri <- function(x = "") {
-  Uri$new(uri = x)
+uri <- function(uri = "") {
+  Uri$new(uri = uri)
 }
 
 Uri <- R6::R6Class(

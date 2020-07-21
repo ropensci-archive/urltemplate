@@ -1,8 +1,10 @@
 #' Expand - expand a uri template with data
 #'
 #' @export
+#' @param template x
+#' @param variables x
 #' @examples
-#' expand(template = 'http://www.{domain}/', variables = '{"domain": "foo.com"}')
+#' # expand(template = 'http://www.{domain}/', variables = '{"domain": "foo.com"}')
 expand <- function(template, variables) {
   sub(TEMPLATE, .ex_pand(variables), template)
 }
